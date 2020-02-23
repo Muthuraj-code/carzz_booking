@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- CSS Style Sheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="">Carzzz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+
+
+        <div class="col-lg-6">
+          <h1 class="bigger-hedding">Book Your Ride anywahere any time.</h1>
+        </div>
+        <div class="col-lg-6">
+
+          <img class="rotate" src="images/iphone6.png" alt="iphone-mockup">
+
+
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">Select a ride </h2>
+    <p>Easy to book safe to ride.</p>
+
+
+    <div class="row">
+
+
+      <div class="pricing-col col-lg-4 col-md-6">
+
+
+        <div class="card">
+          <div class="card-header">
+            <h3>One Way</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">₹15/km</h2>
+            <form class="" action="/booking" method="post">
+              <input type="text" name="frm" value="" placeholder="From City">
+              <input type="text" name="to" value="" placeholder="To City">
+              <label for="date">Dpt Date</label>
+              <input type="date" name="dpt_date" id="date" value="" placeholder="pick the date">
+              <button class="btn btn-block btn-outline-dark" type="submit">Ride Now</button>
+            </form>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Round Trip</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">₹15/km</h2>
+            <form class="" action="index.html" method="post">
+              <input type="text" name="frm" value="" placeholder="From City">
+              <input type="text" name="to" value="" placeholder="To City">
+              <label for="date">Dpt Date</label>
+              <input type="date" name="dpt_date" id="date" value="" placeholder="pick the date">
+              <button class="btn btn-block btn-outline-dark" type="button" onclick="">Ride Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-col col-lg-4 ">
+        <div class="card">
+          <div class="card-header">
+            <h3>Multicity</h3>
+
+          </div>
+          <div class="card-body">
+            <h2 class="pricing-text">₹15/km</h2>
+
+            <form class="" action="/booking" method="post">
+              <input type="text" name="frm" value="" placeholder="From City">
+              <input type="text" name="to" value="" placeholder="To City">
+              <label for="date">Dpt Date</label>
+              <input type="date" name="dpt_date" id="date" value="" placeholder="pick the date">
+              <button class="btn btn-block btn-outline-dark" type="button">Ride Now</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+  <section>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+
+
+
+      <h3 class="bigger-hedding">Find the True Love of Your Dog's Life Today.</h3>
+      <button class="btn btn-lg btn-dark download-button " type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="btn btn-lg btn-light download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+
+
+      <i class="fab fa-twitter footer-icon"></i>
+      <i class="fab fa-facebook-f footer-icon"></i>
+      <i class="fab fa-instagram footer-icon"></i>
+      <i class="fas fa-envelope footer-icon"></i>
+      <p class="footer-text">© Copyright 2018 carzzz</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

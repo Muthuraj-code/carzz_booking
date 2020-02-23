@@ -1,0 +1,33 @@
+<footer class="white-section" id="footer">
+  <div class="container-fluid">
+
+
+    <i class="fab fa-twitter footer-icon"></i>
+    <i class="fab fa-facebook-f footer-icon"></i>
+    <i class="fab fa-instagram footer-icon"></i>
+    <i class="fas fa-envelope footer-icon"></i>
+    <p class="footer-text">© Copyright 2020 carzzz</p>
+  </div>
+</footer>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+       <script>
+
+               var doc = new jsPDF();
+               var specialElementHandlers = {
+                 '#editor': function (element, renderer) {
+               return true;
+           }
+       };
+
+       $('#cmd').click(function () {
+           doc.fromHTML($('#CNF').html(), 15, 15, {
+               'width': 170,
+                   'elementHandlers': specialElementHandlers
+           });
+           doc.save('ThanksForRiding.pdf');
+       });
+       </script>
+</html>

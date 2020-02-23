@@ -18,3 +18,6 @@ How to book a car.
 #Driver functionality is not implimented.
 #Used NodeJS ,expressJS, body-parser at the backend
 #Used ejs,bootstrap,javascript at the front-end
+
+#For this assignment Test only One way is functional.
+#Payment process is Just a sample section

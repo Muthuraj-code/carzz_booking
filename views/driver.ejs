@@ -1,0 +1,29 @@
+<%- include("header") -%>
+<section id="driv">
+  <form class="driver" action="/driver" method="post">
+    <label >Kannada</label>
+    <input type="radio" value="Kannada" name="lang"></input>
+    <label >Hindi</label>
+    <input  type="radio" value="Hindi" name="lang"></input>
+    <label >English</label>
+    <input  type="radio" value="English" name="lang"></input>
+    <button class="btn btn-dark" type="dropdown-item" name="button" type="submit">Choose</button>
+  </form>
+
+<div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Dropdown button
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<%drivers.forEach((driver)=>{%>
+  <a class="dropdown-item" href="#"><%=driver.dName%> ₹<%=driver.price%></a>
+  <%})%>
+</div>
+</div>
+<form class="" action="/booking" method="post">
+  <button class="btn btn-dark btn-block" type="submit" name="button">Continue booking</button>
+</form>
+
+</section>
+
+<%-include("footer") -%>
